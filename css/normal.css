@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+.box {
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	font-size: 500%;
+	display: flex;
+	align-items: center; /* 縦方向中央揃え */
+	justify-content: center; /* 横方向中央揃え */
+	flex-direction: column;
+}
+
+.box__bg_black {
+	background-color: #333;
+}
+
+.box__bg_gray {
+	background-color: #ccc;
+}
+
+.box__bg_photo {
+	background-image: url(http://find-travel.cdn-dena.com/picture/articlebody/112309);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+.scroll-area {
+  height: 100vh;
+  overflow: auto;
+  -webkit-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+  -webkit-scroll-snap-points-y: repeat(100vh);
+  scroll-snap-points-y: repeat(100vh);
+}
+
+@media screen and (max-width: 320px) and (max-width: 480px) {
+	.box {
+		width: 320px;
+		height: 480px;
+	}
+}
