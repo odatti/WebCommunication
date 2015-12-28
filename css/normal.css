@@ -9,9 +9,10 @@ body {
 	color: #fff;
 	font-size: 500%;
 	display: flex;
-	align-items: center; /* 縦方向中央揃え */
-	justify-content: center; /* 横方向中央揃え */
+	text-align: center;
 	flex-direction: column;
+	
+	justify-content: center; /* 横方向中央揃え */
 }
 
 .box__bg_black {
@@ -32,7 +33,11 @@ body {
 p {
 	margin: 0;
 	padding: 0;
-	line-height: 1;
+}
+.box__bg_photo p{
+	text-align: right;
+	padding-right: 10%;
+	font-size: 200%;
 }
 
 .scroll-area {
